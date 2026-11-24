@@ -1,6 +1,6 @@
 'use strict';
 const $=id=>document.getElementById(id), main=$('main'), nav=$('nav'), account=$('account');
-const roles={admin:'Professor / administrador',technician:'Técnico',student:'Estudante',graduate:'Pós-graduando'}, kinds={pcr:'PCR',morfologia:'Identificação morfológica',copro:'Coproparasitológico',outro:'Outra técnica'};
+const roles={admin:'Professor / administrador',technician:'Técnico',student:'Estudante',graduate:'Pós-graduando'}, kinds={pcr:'PCR',morfologia:'Identificação morfológica',copro:'Coproparasitológico',extracao:'Extração de material genético',outro:'Outra técnica'};
 const units=['uL','mL','L','mg','g','kg','un'], unitNames={uL:'µL',mL:'mL',L:'L',mg:'mg',g:'g',kg:'kg',un:'un'};
 let token=null, user=null, page='home', generation=0, expiryTimer;
 let apiBase=String(window.LAB_API||'').replace(/\/$/,'');
