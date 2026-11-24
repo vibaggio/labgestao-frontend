@@ -1,0 +1,3 @@
+# LabGestão frontend (público)
+
+SPA estática em HTML/CSS/JS. A publicação no GitHub Pages destina-se à homologação com dados fictícios; a hospedagem autenticada institucional deve ser aprovada pela TI. Edite `config.js` para apontar para a URL HTTPS da API, sem `/api` e sem barra final. Em Settings → Pages, selecione GitHub Actions; o workflow publica os quatro arquivos estáticos após push em main. Configure CORS no backend como `https://SEU-USUARIO.github.io` (sem caminho). Local: `python -m http.server 5173 --bind 127.0.0.1`, abra `http://127.0.0.1:5173`; API local padrão `http://127.0.0.1:8000`. Não coloque segredos no frontend. Para produção same-origin, configure `window.LAB_API = '';` e restrinja `connect-src` do HTML à própria origem.
